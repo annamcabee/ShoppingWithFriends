@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.group15.shoppingwithfriends" >
+
+    <FrameLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/container"
+        tools:name=".MainActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MergeRootFrame" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_action_shopping_cart"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Apptheme" >
+        <activity
+            android:name=".MainWelcome.WelcomeScreen"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- This meta-data tag is required to use Google Play Services. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id"/>
+
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:label="@string/app_name" />
+        <fragment android:name=".MainWelcome.WelcomeFragment"></fragment>
+
+
+    <activity
+            android:name=".LoginRegistration.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:parentActivityName=".MainWelcome.WelcomeScreen" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainWelcome.WelcomeScreen" />
+        </activity>
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name=".MainWelcome.MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name=".LoginRegistration.RegistrationActivity"
+            android:label="@string/title_activity_registration" >
+        </activity>
+
+        <service
+            android:name=".MainWelcome.MusicService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+
+        <activity
+            android:name=".AddDeleteUser.SearchActivity"
+            android:label="@string/title_activity_search" >
+        </activity>
+        <activity
+            android:name=".FriendsProfileList.FriendsListActivity"
+            android:label="@string/title_activity_friends_list" >
+        </activity>
+        <activity
+            android:name=".FriendsProfileList.ProfileActivity"
+            android:label="@string/title_activity_profile" >
+        </activity>
+        <activity
+            android:name=".AddDeleteUser.DeleteFriend"
+            android:label="@string/delete" >
+        </activity>
+
+        <fragment
+            android:name=".AddDesiredItemFragment"
+            android:label="@string/title_activity_add_desired_item" >
+        </fragment>
+
+        <activity
+            android:name=".ItemSale.AddDesiredItem"
+            android:label="@string/title_activity_add_desired_item" >
+        </activity>
+        <activity
+            android:name=".ItemSale.myItemsActivity"
+            android:label="@string/title_activity_my_items" >
+        </activity>
+        <activity
+            android:name=".ItemSale.AddSalesReport"
+            android:label="@string/title_activity_add_sales_report" >
+        </activity>
+        <activity
+            android:name=".ItemSale.SalesListActivity"
+            android:label="@string/title_activity_sales_list" >
+        </activity>
+        <activity
+            android:name=".ExtraCredit.Tutorial.TutorialActivity"
+            android:label="@string/tutorial_activity" >
+        </activity>
+        <activity
+            android:name=".FriendsProfileList.FriendsListMain"
+            android:label="@string/friends_list_main_activity" >
+        </activity>
+        <activity
+            android:name=".Map.DisplayMap"
+            android:label="@string/display_map" >
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyCZTkAXiquXaQ8c3QtrvyHBDhKqLK1dw1o" />
+
+        <activity
+            android:name=".ItemSale.ItemsMainActivity"
+            android:label="@string/title_activity_items_main" >
+        </activity>
+        <activity
+            android:name=".ItemSale.SalesReportMainActivity"
+            android:label="@string/title_activity_sales_report_main" >
+        </activity>
+        <activity
+            android:name=".LoginRegistration.ForgotPassActivity"
+            android:label="@string/title_activity_forgot_pass" >
+        </activity>
+        <activity
+            android:name=".FriendsProfileList.FavoriteStoreActivity"
+            android:label="@string/title_activity_favorite_store" >
+        </activity>
+    </application>
+
+</manifest>

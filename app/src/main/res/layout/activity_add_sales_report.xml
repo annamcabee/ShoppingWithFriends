@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.group15.shoppingwithfriends.ItemSale.AddSalesReport">
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:id="@+id/Back"
+        android:layout_gravity="right|top"
+        android:onClick="goBackToMain"
+        android:visibility="visible" />
+
+    <TextView android:text="My Sales Reports" android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:autoText="false"
+        android:elegantTextHeight="false"
+        android:gravity="center_horizontal|top"
+        android:textSize="25dp"
+        android:id="@+id/textView10" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sales_report_item_name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/textView10"
+        android:layout_alignEnd="@+id/textView10"
+        android:hint="Item Name"
+        android:layout_below="@+id/Back" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sales_report_item_price"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/sales_report_item_name"
+        android:layout_alignRight="@+id/sales_report_item_name"
+        android:layout_alignEnd="@+id/sales_report_item_name"
+        android:hint="Item Price" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sales_report_store_name"
+        android:layout_below="@+id/sales_report_item_price"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/sales_report_item_price"
+        android:layout_alignEnd="@+id/sales_report_item_price"
+        android:hint="Store Name" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sales_report_location_latitude"
+        android:layout_below="@+id/sales_report_store_name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/sales_report_store_name"
+        android:layout_alignEnd="@+id/sales_report_store_name"
+        android:hint="Latitude" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sales_report_location_longitude"
+        android:layout_below="@+id/sales_report_location_latitude"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/sales_report_store_name"
+        android:layout_alignEnd="@+id/sales_report_store_name"
+        android:hint="Longitude" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register Sales Report"
+        android:id="@+id/button_sales_report"
+        android:onClick="submitSalesReport"
+        android:layout_alignRight="@+id/sales_report_location_longitude"
+        android:layout_alignEnd="@+id/sales_report_location_longitude"
+        android:layout_above="@+id/button_cancel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:id="@+id/button_cancel"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/button_sales_report"
+        android:layout_alignEnd="@+id/button_sales_report"
+        android:onClick="cancelSalesReport"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/salesReportEx"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/sales_report_location_longitude"
+        android:layout_alignRight="@+id/sales_report_location_longitude"
+        android:layout_alignEnd="@+id/sales_report_location_longitude"
+        android:hint="Expiration Date" />
+
+</RelativeLayout>

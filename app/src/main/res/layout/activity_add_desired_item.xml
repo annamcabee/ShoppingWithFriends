@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.group15.shoppingwithfriends.ItemSale.AddDesiredItem"
+    android:id="@+id/desiredItem">
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:id="@+id/Back"
+        android:layout_gravity="right|top"
+        android:onClick="backToMain"
+        android:visibility="visible" />
+
+    <TextView android:text="My Wish List" android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:autoText="false"
+        android:elegantTextHeight="false"
+        android:gravity="center_horizontal|top"
+        android:textSize="25dp"
+        android:id="@+id/textView10" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/desiredItemName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="67dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:hint="Desired Item Name" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/maxPrice"
+        android:layout_below="@+id/desiredItemName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:hint="Max Price of Interest" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/milesAway"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_below="@+id/maxPrice"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:hint="Search __ miles away" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/currentLatitude"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_below="@+id/milesAway"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:hint="Current Latitude" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/currentLongitude"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_below="@+id/currentLatitude"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:hint="Current Longitude" />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="62dp"
+        android:text="Register Interest"
+        android:id="@+id/buttonRI"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="62dp"
+        android:onClick="registerInterest"
+        android:nestedScrollingEnabled="false" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="62dp"
+        android:text="Cancel"
+        android:id="@+id/cancel_add_item"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/buttonRI"
+        android:layout_alignEnd="@+id/buttonRI"
+        android:layout_alignParentLeft="true"
+        android:onClick="cancelAddItem"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

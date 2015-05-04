@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Shopping With Friends</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="register_button">Register</string>
+    <string name="login">Login</string>
+    <string name="welcome_message">Welcome To Shopping With Friends!</string>
+    <string name="title_activity_login">Login</string>
+    <string name="user_message">Username</string>
+    <string name="password_message">Password</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_failed_login">FailedLoginActivity</string>
+    <string name="failed_login_message">The username/password that you entered is incorrect. Please try again.</string>
+    <string name="dummy_welcome_message">Login Successful!</string>
+    <string name="title_activity_registration">RegistrationActivity</string>
+    <string name="hello_blank_fragment">Error</string>
+    <string name="user_name_invalid">That username is taken or invalid</string>
+    <string name="confirm">Okay</string>
+    <string name="password_fragment">Password must be 5 characters</string>
+    <string name="phone_fragment">Phone number not 10 digits</string>
+    <string name="email_fragment">Email is not valid</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="login_failed_fragment">Username or Password Incorrect</string>
+    <string name="title_activity_friends_list">FriendsListActivity</string>
+    <string name="no_data_fragment">You must fill in the search field</string>
+    <string name="add_user_string">User added successfully</string>
+    <string name="login_help_string">To Login, go to the welcome screen and enter your username and password and select the button Login</string>
+    <string name="friend_help_string">To add a friend, you must first login and then you will be at the main screen of the application. Select the Add a Friend button and search for a friend by their username</string>
+    <string name="map_help_string">To view a map, you must first login and then you will be at the main screen of the application. Select the View Map option and navigate the map</string>
+    <string name="item_help_string">To add an interested item, you must first login and then you will be at the main screen of the application. Select the Add an Item button and enter the required information about the item</string>
+    <string name="sale_help_string">To register a sale, you must first login and then you will be at the main screen of the application. Select the Add a Sale button and enter the required information!</string>
+    <string name="user_failed_string">User not found</string>
+    <string name="delete">Delete</string>
+    <string name="no_friends_fragment">You have not added any friends yet</string>
+    <string name="friend_deleted_fragment">Friend was deleted</string>
+    <string name="delete_friend_failed_string">Friend not deleted</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="title_activity_add_desired_item">AddDesiredItemActivity</string>
+    <string name="item_added_sucessfully">Item added successfully!</string>
+    <string name="item_added_unsuccessfully">Item was not added</string>
+    <string name="title_activity_my_items">View my items</string>
+    <string name="item_name_fragment">You must add an item name</string>
+    <string name="item_price_fragment">Item price is invalid</string>
+    <string name="max_miles_fragment">Maximum miles away is invalid</string>
+    <string name="zipcode_fragment">Zip code is invalid</string>
+    <string name="miles_away_1">10</string>
+    <string name="miles_away_2">20</string>
+    <string name="miles_away_3">50</string>
+    <string name="miles_away_4">100</string>
+    <string name="miles_away_5">100+</string>
+    <string name="facebook_app_id">facebook integration</string>
+    <string name="tutorial_activity">tutorial activity</string>
+    <string name="display_map">display map</string>
+    <string name="delete_command">delete command</string>
+    <string name="view_friends_command">view command</string>
+    <string name="add_friend_command">add command</string>
+    <string name="abstract_command">abstract command</string>
+    <string name= "app_id">447703808735429</string>
+
+
+    <string-array name="miles_away">
+        <item>10</item>
+        <item>20</item>
+        <item>50</item>
+        <item>100</item>
+        <item>100+</item>
+    </string-array>
+
+    <string name="title_activity_add_sales_report">AddSalesReport</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_sales_list">SalesListActivity</string>
+    <string name="sales_report_fragment">Your friend just sent you a sales report</string>
+    <string name="scene_transitions_activity">Scene transitions</string>
+    <string name="new_message_notification_title_template">New message from Shopping With Friends</string>
+    <string name="new_message_notification_placeholder_text_template">Sales Report Added to SWF - Check it out!</string>
+    <string name="action_share">Share</string>
+    <string name="action_reply">Reply</string>
+    <string name="friends_list_main_activity">FriendsListMainActivity</string>
+    <string name="title_activity_items_main">ItemsMainActivity</string>
+    <string name="title_activity_sales_report_main">SalesReportMainActivity</string>
+    <string name="title_activity_forgot_pass">ForgotPassActivity</string>
+    <string name="title_activity_favorite_store">FavoriteStoreActivity</string>
+    <string name="favorite_added">Your favorite store was added successfully!</string>
+
+</resources>
